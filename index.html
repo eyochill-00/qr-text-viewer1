@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto QR Code Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="glow-orb"></div>
+
+    <div class="container">
+        <div class="card">
+            <div class="label">Auto QR Generator</div>
+            <h1>Generate a <span>QR Code</span></h1>
+            <div class="divider"></div>
+
+            <div class="input-wrapper">
+                <input type="text" id="inputText" placeholder="Type text or paste a URL…" autocomplete="off">
+                <span class="input-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+                        <rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM17 17h3v3h-3zM14 20h3"/>
+                    </svg>
+                </span>
+            </div>
+
+            <div id="qrcode-wrapper">
+                <div id="qrcode"></div>
+                <p id="hint">Start typing to generate your QR code</p>
+            </div>
+        </div>
+
+        <div class="footer">type text or url &nbsp;·&nbsp; scan with any camera</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
